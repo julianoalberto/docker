@@ -1,0 +1,7 @@
+FROM ubuntu:18.04
+
+RUN useradd ctw01020
+
+USER ctw01020
+
+ENTRYPOINT ["/usr/bin/whoami"]

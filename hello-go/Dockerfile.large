@@ -1,0 +1,11 @@
+FROM golang:1.18
+
+WORKDIR /usr/src/myapp
+
+COPY hello.go .
+
+RUN go mod init hello
+
+RUN go build -v
+
+ENTRYPOINT ["/usr/src/myapp/hello"]

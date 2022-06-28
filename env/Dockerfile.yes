@@ -1,0 +1,7 @@
+FROM ubuntu:18.04
+
+ENV USER_NAME ctw01020
+
+RUN useradd ${USER_NAME}
+
+ENTRYPOINT echo $USER_NAME
