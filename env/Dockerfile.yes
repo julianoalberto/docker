@@ -2,6 +2,6 @@ FROM ubuntu:18.04
 
 ENV USER_NAME ctw01020
 
-RUN useradd ${USER_NAME}
+ARG USER_NAME ctw01020
 
-ENTRYPOINT echo $USER_NAME
+RUN useradd ${USER_NAME}

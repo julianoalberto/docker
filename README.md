@@ -204,28 +204,9 @@ flask run
 ## docker
 ```
 docker build . -t calc:latest
-docker run -ti --network host --rm  alpine:latest
 docker run -ti --network host --rm -p 5000:5000 --name calc calc:latest
 curl "localhost:5000/add?a=10&b=3"
 ```
-
-
-# Docker @CTW
-## MCI
-Uses Docker mostly to build and test C/C++ code.
-
-* https://cc-github.bmwgroup.net/mci/mgu22-sdk-docker/blob/master/mgu22-sdk-base/Dockerfile
-    * https://cc-github.bmwgroup.net/mci/mgu22-sdk-docker/blob/master/mgu22-sdk-pkglist/Dockerfile
-        * https://cc-github.bmwgroup.net/mci/mgu22-sdk-docker/blob/master/mgu22-sdk-ccache/Dockerfile
-            * https://cc-github.bmwgroup.net/mci/mgu22-sdk-docker/blob/master/mgu22-sdk-clang/Dockerfile
-                * https://cc-github.bmwgroup.net/mci/mgu22-sdk-docker/blob/master/mgu22-sdk-clang-vdt/Dockerfile
-
-
-## Apinext
-Uses a Docker container as an entry point for CI operations. Executes Python code.
-
-* https://cc-github.bmwgroup.net/apinext/docker-aosp-build/blob/master/docker/Dockerfile
-
 
 # Why Docker?
 * deploy with no need to configure host OS
