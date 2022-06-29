@@ -238,4 +238,6 @@ Uses a Docker container as an entry point for CI operations. Executes Python cod
 
 # TBD
 * docker-compose
+    * https://github.com/docker/compose
 * kubernetes
+    * https://kubernetes.io/
